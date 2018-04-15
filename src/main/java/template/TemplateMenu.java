@@ -6,7 +6,9 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import org.protege.editor.owl.model.OWLWorkspace;
 import org.protege.editor.owl.ui.action.ProtegeOWLAction;
 import org.semanticweb.owlapi.model.OWLEntity;
@@ -19,7 +21,7 @@ import org.semanticweb.owlapi.model.OWLEntity;
  */
 public class TemplateMenu extends ProtegeOWLAction {
 	private static final long serialVersionUID = 749843192372192393L;
-	private Logger logger = Logger.getLogger(TemplateMenu.class);
+	private Logger logger = LoggerFactory.getLogger(TemplateMenu.class);
 
 	@Override
 	public void initialise() throws Exception {		

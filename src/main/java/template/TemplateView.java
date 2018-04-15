@@ -4,7 +4,9 @@ import java.awt.BorderLayout;
 
 import javax.swing.JLabel;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import org.protege.editor.owl.model.selection.OWLSelectionModel;
 import org.protege.editor.owl.model.selection.OWLSelectionModelListener;
 import org.protege.editor.owl.ui.view.AbstractOWLViewComponent;
@@ -21,7 +23,7 @@ import org.semanticweb.owlapi.model.OWLEntity;
  */
 public class TemplateView extends AbstractOWLViewComponent {
 	private static final long serialVersionUID = 1505057428784911280L;
-	private Logger logger = Logger.getLogger(TemplateView.class);
+	private Logger logger = LoggerFactory.getLogger(TemplateView.class);
 	private JLabel label;
 	private OWLSelectionModel selectionModel;
 	private OWLSelectionModelListener listener = new OWLSelectionModelListener() {
